@@ -33,18 +33,18 @@ public class MainActivity extends SupportActivity {
         initView();
 
         /**
-         * 加载各个Fragment在MainActivity的容器以及初始化的第一个Fragment
+         * 加载容器以及初始化的第一个Fragment
          * */
         loadRootFragment(R.id.container, new HomeFragment());
         setFrgmentTitle("首页");
 
         /**
-         * 添加左上角的侧滑导航栏，也可以b不添加，通过侧滑的方式打开
+         * 添加左上角的侧滑导航栏t图标，也可以不添加，通过侧滑的方式打开
          * */
         openStart();
 
         /**
-         * 设置跳转监听
+         * 设置Fragment跳转监听
          * */
 
         navClick();
