@@ -1,4 +1,4 @@
-package com.example.demo2.utils;
+package com.example.mynavigation.utils;
 
 import android.graphics.PointF;
 import android.graphics.Matrix;
@@ -6,7 +6,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 
-public class MyTouch implements View.OnTouchListener {
+public class PictureTouch implements View.OnTouchListener {
 
     //缩放控制
     private Matrix matrix = new Matrix();
@@ -94,53 +94,4 @@ public class MyTouch implements View.OnTouchListener {
     }
 
 
-    //    public boolean onTouch(View v, MotionEvent event) {
-//        ImageView view = (ImageView) v;
-//        //判断事件的类型
-//        //得到低八位才能获取动作，所以要屏蔽高八位(通过与运算&255)
-//        //ACTION_MASK就是一个常量，代表255
-//        switch (event.getAction() & MotionEvent.ACTION_MASK) {
-//            //单指
-//            case MotionEvent.ACTION_DOWN:
-//                matrix.set(view.getImageMatrix());//记录ImageView当前的移动位置
-//                savematrix.set(matrix);
-//                startPoint.set(event.getX(), event.getY());
-//                mode = DRAG;
-//                break;
-//            //双指
-//            case MotionEvent.ACTION_POINTER_DOWN:
-//                oriDis = distance(event);
-//                if (oriDis > 10f) {
-//                    savematrix.set(matrix);
-//                    midPoint = middle(event);
-//                    mode = ZOOM;
-//                }
-//                break;
-//            //手指松开
-//            case MotionEvent.ACTION_UP:
-//            case MotionEvent.ACTION_POINTER_UP:
-//                mode = NONE;
-//                break;
-//            //单指滑动
-//            case MotionEvent.ACTION_MOVE:
-//                if (mode == DRAG){
-//                    //一个手指移动
-//                    matrix.set(savematrix);
-//                    matrix.postTranslate(event.getX()-startPoint.x,
-//                            event.getY()-startPoint.y);
-//                }else if (mode == ZOOM){
-//                    //2个手指
-//                    float newDist = distance(event);
-//                    if (newDist>10f){
-//                        matrix.set(savematrix);
-//                        float scale = newDist /oriDis;
-//                        matrix.postScale(scale,scale,midPoint.x,midPoint.y);
-//                    }
-//                }
-//                break;
-//        }
-//        //设置ImageView的Matrix
-//        view.setImageMatrix(matrix);
-//        return true;
-//    }
 }

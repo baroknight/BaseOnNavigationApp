@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/home_Fragment"
+android:id="@+id/menu_home_fragment"
+        />
+    <item
+        android:id="@+id/menu_ftv_fragment"
+        android:title="@string/ftv_Fragment" />
+</menu>

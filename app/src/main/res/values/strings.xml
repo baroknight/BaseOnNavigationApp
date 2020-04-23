@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mynavigation</string>
+    <string name="home_Fragment">首页</string>
+    <string name="home_Introduction_Fragment">来啦，客官</string>
+    <string name="ftv_Fragment">视频播放和图片手势</string>
+    <string name="nav_drawer_open">打开导航栏</string>
+    <string name="nav_drawer_close">关闭导航栏</string>
+</resources>
