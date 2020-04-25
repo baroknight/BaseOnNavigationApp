@@ -22,7 +22,7 @@ import java.util.List;
 
 import me.yokeyword.fragmentation.SupportFragment;
 
-public class FTVDemo extends SupportFragment {
+public class FTVDemoFragment extends SupportFragment {
     TabLayout tlDemo;
     ViewPager vpDemo;
 //    在FTCVDemo中通过TabLayout跳转的Fragment的集合

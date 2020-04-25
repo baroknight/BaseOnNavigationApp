@@ -9,8 +9,9 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.example.mynavigation.fragment.FTVDemo;
+import com.example.mynavigation.fragment.FTVDemoFragment;
 import com.example.mynavigation.fragment.HomeFragment;
+import com.example.mynavigation.fragment.VisualFragment;
 import com.google.android.material.navigation.NavigationView;
 
 import me.yokeyword.fragmentation.SupportActivity;
@@ -63,7 +64,11 @@ public class MainActivity extends SupportActivity {
                         break;
                     case R.id.menu_ftv_fragment:
                         setFrgmentTitle("视频和图片");
-                        startWithPop(new FTVDemo());
+                        startWithPop(new FTVDemoFragment());
+                        break;
+                    case R.id.menu_visual_fragment:
+                        setFrgmentTitle("可视化图");
+                        startWithPop(new VisualFragment());
                         break;
                 }
 

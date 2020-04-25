@@ -7,4 +7,6 @@ android:id="@+id/menu_home_fragment"
     <item
         android:id="@+id/menu_ftv_fragment"
         android:title="@string/ftv_Fragment" />
+    <item android:title="@string/visualization"
+        android:id="@+id/menu_visual_fragment"/>
 </menu>
