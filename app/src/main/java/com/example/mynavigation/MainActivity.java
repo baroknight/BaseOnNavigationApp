@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.example.mynavigation.fragment.AmapFragment;
 import com.example.mynavigation.fragment.FTVDemoFragment;
 import com.example.mynavigation.fragment.HomeFragment;
 import com.example.mynavigation.fragment.VisualFragment;
@@ -69,6 +70,10 @@ public class MainActivity extends SupportActivity {
                     case R.id.menu_visual_fragment:
                         setFrgmentTitle("可视化图");
                         startWithPop(new VisualFragment());
+                        break;
+                    case R.id.menu_amap_fragment:
+                        setFrgmentTitle("高德地图");
+                        startWithPop(new AmapFragment());
                         break;
                 }
 

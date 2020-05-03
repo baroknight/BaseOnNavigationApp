@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.example.mynavigation"
-        minSdkVersion 28
+        minSdkVersion 22
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -21,21 +21,19 @@ android {
 
 dependencies {
     //Fragmentation
-//    case1:导入Support包
-//    implementation 'me.yokeyword:fragmentation:1.3.6'
-//    implementation 'me.yokeyword:fragmentation-swipeback:1.3.6'
-
-//现在大部分人用的是androidx，所以导入的应该是androidx包
-
-//    case2:导入androidX包
+    //    case1:导入Support包
+    //    implementation 'me.yokeyword:fragmentation:1.3.6'
+    //    implementation 'me.yokeyword:fragmentation-swipeback:1.3.6'
+    //现在大部分人用的是androidx，所以导入的应该是androidx包
+    //    case2:导入androidX包
     implementation 'me.yokeyword:fragmentationx:1.0.2'
     implementation 'me.yokeyword:fragmentation-swipeback:1.3.6'
-
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'com.google.android.material:material:1.0.0'
+    implementation files('libs/AMap3DMap_7.4.0_AMapNavi_7.4.0_AMapSearch_7.3.0_20200416.jar')
 }
