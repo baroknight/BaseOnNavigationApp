@@ -19,3 +19,10 @@
 添加assets文件，放入要绘制好可视化图形的html文件
 在Fragment中加载html路径，传入x轴和y轴参数
 
+
+3:基于高德地图实现地图显示
+实现步骤：
+在高德官网申请key，下载地图
+Libs中复制地图并右键Add as Library，
+manifest中添加mata-data，并填写key
+写入xml和java文件
